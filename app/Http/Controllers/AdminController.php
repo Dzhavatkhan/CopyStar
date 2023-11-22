@@ -72,10 +72,6 @@ class AdminController extends Controller
         }
 
     }
-    public function deleteOrder(Request $request)
-    {
-        //
-    }
 
     /**
      * Display the specified resource.
@@ -90,7 +86,18 @@ class AdminController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $product = Product::findOrFail($id);
+        $name = $request->name;
+        $category = $request->category;
+        $price = $request->price;
+        $product::update([
+            "name" => $name,
+            "category" => $category,
+            "price" => $price
+        ]);
+        return response()->json([
+            "message" => "Product is update"
+        ],200)->header("Content-type", "application/json");
     }
 
     /**

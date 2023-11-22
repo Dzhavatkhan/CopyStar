@@ -93,9 +93,9 @@
             <div class="carousel">
               <img src="{{ asset('img/products/bbd6e8f5d231394fe05bc35e441dd6a266878d5.jpg') }}" alt="img" draggable="false">
               <img src="{{ asset('img/products/a28823cdf04e7b1ad2aacc9033cd5bf12308d418.jpg') }}" alt="img" draggable="false">
-              <img src="{{ asset('img/products/a28823cdf04e7b1ad2aacc9033cd5bf12308d418.jpg') }}" alt="img" draggable="false">
-              <img src="{{ asset('img/products/a28823cdf04e7b1ad2aacc9033cd5bf12308d418.jpg') }}" alt="img" draggable="false">
-              <img src="{{ asset('img/products/a28823cdf04e7b1ad2aacc9033cd5bf12308d418.jpg') }}" alt="img" draggable="false">
+              <img src="{{ asset('img/products/a36b4b559ac69a6fbc40a49fcd5507884305a664.jpg') }}" alt="img" draggable="false">
+              <img src="{{ asset('img/products/bcb36e7704bb2399e9320beaad6eac63ddfaa2.jpg') }}" alt="img" draggable="false">
+              <img src="{{ asset('img/products/efeb472d10ed096b0761022b117561f84b77fd.jpg') }}" alt="img" draggable="false">
               <img src="{{ asset('img/products/a28823cdf04e7b1ad2aacc9033cd5bf12308d418.jpg') }}" alt="img" draggable="false">
               <img src="{{ asset('img/products/a28823cdf04e7b1ad2aacc9033cd5bf12308d418.jpg') }}" alt="img" draggable="false">
               <img src="{{ asset('img/products/a28823cdf04e7b1ad2aacc9033cd5bf12308d418.jpg') }}" alt="img" draggable="false">
