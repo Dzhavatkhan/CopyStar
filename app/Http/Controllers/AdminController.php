@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Admin;
 use App\Models\Order;
 use App\Models\Product;
+use App\Models\Slider;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
@@ -37,6 +38,12 @@ class AdminController extends Controller
                 "message" => "Админ добавлен"
             ],200)->header("Content-type", "application/json");
         }
+    }
+    public function slider(Request $request){
+        $image = $request->image;
+        Slider::create([
+            "img" => $image
+        ]);
     }
     public function addProduct(Request $request)
     {
