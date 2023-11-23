@@ -17,7 +17,7 @@ class AuthController extends Controller
     }
     public function signUp()
     {
-
+        return view('auth.reg');
     }
 
     /**

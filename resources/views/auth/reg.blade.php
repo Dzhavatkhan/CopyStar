@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite("resources/css/reg.css")
     <title>Регистрация</title>
 </head>
 <body>
     <div class="container">
         <div class="wrapper">
+            <h2>
+                Регистрация
+            </h2>
             <form action="" class="form" method="POST">
                 @csrf
                 <input type="text" class="name" name="name" placeholder="Имя">
@@ -23,15 +27,24 @@
                 @error('patronymic')
                     <p class="error">{{$message}}</p>
                 @enderror
-                <input type="text" class="password" name="password" placeholder="Пароль">
+                <input type="email" class="email" name="email" placeholder="Почта">
+                @error('email')
+                    <p class="error">{{$message}}</p>
+                @enderror
+                <input type="text" class="login" name="login" placeholder="Логин">
+                @error('login')
+                    <p class="error">{{$message}}</p>
+                @enderror
+                <input type="password" class="password" name="password" placeholder="Пароль">
                 @error('password')
                     <p class="error">{{$message}}</p>
                 @enderror
-                <input type="text" class="password_confirm" name="password_confirm" placeholder="Подтвердите пароль">
+                <input type="password" class="password" name="password_confirm" placeholder="Подтвердите пароль">
                 @error('password_confirm')
                     <p class="error">{{$message}}</p>
                 @enderror
                 <button>Отправить</button>
+                <p>Нажимая на эту кнопку Вы соглашаетесь с правилами сайта</p>
             </form>
         </div>
     </div>

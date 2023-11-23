@@ -133,7 +133,7 @@
                 <input type="text" class="password" placeholder="Пароль" name="password" value="{{ old('name') }}" >
 
                 <button class="send_form">Отправить</button>
-                <a class="a" href="">У меня нет аккаунта!</a>
+                <a class="a" href="{{ route('signUp') }}">У меня нет аккаунта!</a>
             </form>
         </div>
     </div>
