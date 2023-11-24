@@ -8,9 +8,12 @@
     @vite('resources/css/profile.css')
 </head>
 <body>
-        <button class="tablink" onclick="openPage('Home', this, 'red')">Ваша корзина</button>
-        <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">Ваши заказы</button>
-        
+    <div class="nav">
+        <button class="tablink" onclick="openPage('Home', this, '#5E9FF2')">Ваша корзина</button>
+        <button class="tablink" onclick="openPage('News', this, '#5E9FF2')" id="defaultOpen">Ваши заказы</button>
+        <button class="tablink"  id="defaultOpen"><a href="">Выйти</a></button>
+    </div>
+
         <div id="Home" class="tabcontent">
             <div class="container">
                 <div class="card">
@@ -27,6 +30,9 @@
                         <p class="card-category">
                             category
                         </p>
+                        <p class="card-quantity">
+                            1
+                        </p>
                         <button class="card-buy">
                             Купить
                         </button>
@@ -46,6 +52,207 @@
                         <p class="card-category">
                             category
                         </p>
+                        <p class="card-quantity">
+                            1
+                        </p>
+                        <button class="card-buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+
+                    </div>
+                    <div class="card-inf">
+                        <p class="card-name">
+                            Name
+                        </p>
+                        <p class="card-price">
+                            Price
+                        </p>
+                        <p class="card-category">
+                            category
+                        </p>
+                        <p class="card-quantity">
+                            1
+                        </p>
+                        <button class="card-buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+
+                    </div>
+                    <div class="card-inf">
+                        <p class="card-name">
+                            Name
+                        </p>
+                        <p class="card-price">
+                            Price
+                        </p>
+                        <p class="card-category">
+                            category
+                        </p>
+                        <p class="card-quantity">
+                            1
+                        </p>
+                        <button class="card-buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+
+                    </div>
+                    <div class="card-inf">
+                        <p class="card-name">
+                            Name
+                        </p>
+                        <p class="card-price">
+                            Price
+                        </p>
+                        <p class="card-category">
+                            category
+                        </p>
+                        <p class="card-quantity">
+                            1
+                        </p>
+                        <button class="card-buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+
+                    </div>
+                    <div class="card-inf">
+                        <p class="card-name">
+                            Name
+                        </p>
+                        <p class="card-price">
+                            Price
+                        </p>
+                        <p class="card-category">
+                            category
+                        </p>
+                        <p class="card-quantity">
+                            1
+                        </p>
+                        <button class="card-buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+
+                    </div>
+                    <div class="card-inf">
+                        <p class="card-name">
+                            Name
+                        </p>
+                        <p class="card-price">
+                            Price
+                        </p>
+                        <p class="card-category">
+                            category
+                        </p>
+                        <p class="card-quantity">
+                            1
+                        </p>
+                        <button class="card-buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+
+                    </div>
+                    <div class="card-inf">
+                        <p class="card-name">
+                            Name
+                        </p>
+                        <p class="card-price">
+                            Price
+                        </p>
+                        <p class="card-category">
+                            category
+                        </p>
+                        <p class="card-quantity">
+                            1
+                        </p>
+                        <button class="card-buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+
+                    </div>
+                    <div class="card-inf">
+                        <p class="card-name">
+                            Name
+                        </p>
+                        <p class="card-price">
+                            Price
+                        </p>
+                        <p class="card-category">
+                            category
+                        </p>
+                        <p class="card-quantity">
+                            1
+                        </p>
+                        <button class="card-buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+
+                    </div>
+                    <div class="card-inf">
+                        <p class="card-name">
+                            Name
+                        </p>
+                        <p class="card-price">
+                            Price
+                        </p>
+                        <p class="card-category">
+                            category
+                        </p>
+                        <p class="card-quantity">
+                            1
+                        </p>
+                        <button class="card-buy">
+                            Купить
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+
+                    </div>
+                    <div class="card-inf">
+                        <p class="card-name">
+                            Name
+                        </p>
+                        <p class="card-price">
+                            Price
+                        </p>
+                        <p class="card-category">
+                            category
+                        </p>
+                        <p class="card-quantity">
+                            1
+                        </p>
                         <button class="card-buy">
                             Купить
                         </button>
@@ -53,13 +260,13 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="News" class="tabcontent">
         <h3>News</h3>
-        <p>Some news this fine day!</p> 
+        <p>Some news this fine day!</p>
         </div>
-        
-   
+
+
 <script>
     function openPage(pageName,elmnt,color) {
     var i, tabcontent, tablinks;
@@ -74,7 +281,7 @@
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
   }
-  
+
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
 </script>

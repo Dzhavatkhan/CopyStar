@@ -4,81 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @vite('resources/css/app.css')
     <title>Home</title>
 </head>
 <body>
-    <style>
-.wrapper{
-  display: flex;
-  max-width: 1200px;
-  position: relative;
-}
-.wrapper i{
-  top: 50%;
-  height: 44px;
-  width: 44px;
-  color: #343F4F;
-  cursor: pointer;
-  font-size: 1.15rem;
-  position: absolute;
-  text-align: center;
-  line-height: 44px;
-  background: #fff;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.1s linear;
-}
-.wrapper i:active{
-  transform: translateY(-50%) scale(0.9);
-}
-.wrapper i:hover{
-  background: #f2f2f2;
-}
-.wrapper i:first-child{
-  left: -22px;
-  display: none;
-}
-.wrapper i:last-child{
-  right: -22px;
-}
-.wrapper .carousel{
-  font-size: 0px;
-  cursor: pointer;
-  overflow: hidden;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-}
-.carousel.dragging{
-  cursor: grab;
-  scroll-behavior: auto;
-}
-.carousel.dragging img{
-  pointer-events: none;
-}
-.carousel img{
-  height: 340px;
-  object-fit: cover;
-  user-select: none;
-  margin-left: 14px;
-  width: calc(100% / 3);
-}
-.carousel img:first-child{
-  margin-left: 0px;
-}
-@media screen and (max-width: 900px) {
-  .carousel img{
-    width: calc(100% / 2);
-  }
-}
-@media screen and (max-width: 550px) {
-  .carousel img{
-    width: 100%;
-  }
-}
-    </style>
+
     <header>
-        <img src="" alt="" class="logotype">
-        <input type="search" name="search" id="">
+        <img src="{{asset('img/main/CopyStar.svg')}}" alt="" class="logotype">
+        <input type="search" class="search" name="search" placeholder="Поиск..." id="">
         <nav>
             <ul>
                 <li>Каталог</li>
