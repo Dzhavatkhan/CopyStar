@@ -17,7 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 Route::get('sign in', [AuthController::class, 'index'])->name("signIn");
 Route::get('sign up', [AuthController::class, 'signUp'])->name('signUp');
+Route::post('reg', [AuthController::class, "reg"])->name('reg');
+
 Route::get('profile', [UserController::class, 'index'])->name('profile');
+Route::get('profile/logout', [AuthController::class, 'logout'])->name('logout');

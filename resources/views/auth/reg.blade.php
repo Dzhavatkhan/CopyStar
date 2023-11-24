@@ -13,7 +13,7 @@
             <h2>
                 Регистрация
             </h2>
-            <form action="" class="form" method="POST">
+            <form action="{{ route('reg') }}" class="form" method="POST">
                 @csrf
                 <input type="text" class="name" name="name" placeholder="Имя">
                 @error('name')
@@ -35,18 +35,15 @@
                 @error('login')
                     <p class="error">{{$message}}</p>
                 @enderror
-                <input type="password" class="password" name="password" placeholder="Пароль">
+                <input type="text" class="password" name="password" placeholder="Пароль">
                 @error('password')
                     <p class="error">{{$message}}</p>
                 @enderror
-                <input type="password" class="password" name="password_confirm" placeholder="Подтвердите пароль">
-                @error('password_confirm')
-                    <p class="error">{{$message}}</p>
-                @enderror
+                <input type="text" class="password" name="password_confirm" placeholder="Подтвердите пароль">
                 <button>Отправить</button>
-                <p>Нажимая на эту кнопку Вы соглашаетесь с правилами сайта</p>
+                <p class="rules">Нажимая на эту кнопку Вы соглашаетесь с правилами сайта</p>
             </form>
         </div>
-    </div>
+    </div>text
 </body>
 </html>

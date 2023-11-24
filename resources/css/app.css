@@ -5,16 +5,64 @@
 }
 html{
     scroll-behavior: smooth;
+    background-color: #FBFBFB;
 }
 header, main{
     padding-left: 100px;
     padding-right: 100px;
 }
-nav ul{
+nav ul li{
     display: inline-flex;
-
+    margin-left:60px;
+    color: #000;
+    text-align: center;
+    font-family: "Itim";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    bottom: 15px;
+}
+nav{
+  width: 400px;
+}
+ul{
+  width: 400px;
+}
+li button{
+  color: #FFF;
+  border: none;
+  background: #45BF86;
+  width: 124px;
+  height: 53px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+li button:hover{
+  transition: 0.5s;
+  transform: scale(1.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+button a, li a{
+  color: #FFF;
+  text-decoration: none;
+}
+nav ul li:first-child{
+  margin-left: 0;
+}
+nav{
+  position: relative;
+  left: 1393px;
+}
+.logotype{
+  position: relative;
+  top: 40px;
 }
 .search{
+    position: relative;
+    top: 30px;
+    left: 164px;
     border-radius: 15px;
     background: #FFF;
     width: 698px;
@@ -40,10 +88,12 @@ nav ul{
     font-weight: 400;
     line-height: normal;
 }
-.wrapper{
+.wrapper{    
     display: flex;
-    max-width: 1200px;
+    max-width: 1415px;
     position: relative;
+    top: 90px;
+    left: 134px;
   }
   .wrapper i{
     top: 50%;
@@ -80,6 +130,15 @@ nav ul{
     white-space: nowrap;
     scroll-behavior: smooth;
   }
+  i{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  i img{
+    height: 40px;
+    width: 40px;
+  }
   .carousel.dragging{
     cursor: grab;
     scroll-behavior: auto;
@@ -88,7 +147,7 @@ nav ul{
     pointer-events: none;
   }
   .carousel img{
-    height: 340px;
+    height: 484px;
     object-fit: cover;
     user-select: none;
     margin-left: 14px;
@@ -107,3 +166,109 @@ nav ul{
       width: 100%;
     }
   }
+.about{
+  margin-top: 110px;
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+}
+.blobs{
+
+  width: 75px;
+  height: 75px;
+}
+.phone_number{
+  color: #6D0FF2;
+  text-align: center;
+  font-family: "Ek Mukta";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.email{
+  color: #45BF86;
+  text-align: center;
+  font-family: "Ek Mukta";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.address{
+  color: #F00;
+  font-family: "Ek Mukta";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.about-block{
+  position: relative;
+  left: 134px;
+  margin-top: 50px;
+  width: 434px;
+  height: 534px;
+  flex-shrink: 0;
+  background: #ffff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 67px;
+}
+.about-block p{
+  max-width: 100%;
+  text-align: center;
+}
+.about-map{
+  width: 841px;
+  height: 607px;
+  position: relative;
+  display: flex;
+  left: 800px;
+  bottom: 530px;
+}
+  footer{
+    margin-top: 10px;
+    background: #169EF2;
+    width: 1903px;
+    height: 315px;
+  }
+  .footer-icons{
+    margin-left: 730px;
+  }
+  .footer-icon{
+    margin-left: 72px;
+    margin-top: 92px;
+    width: 75px;
+    height: 75px;
+  }
+  .footer-icon:first-child{
+    margin-left: 0;
+  }
+  .footer-info{
+    display: inline-flex;
+    margin-top: 24px;
+    margin-left: 364px;
+  }
+  .footer-info p:first-child{
+    margin-left: 0;
+  }
+  .footer-info p{
+    margin-left: 246px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Ek Mukta";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+.lane{
+  margin-left: 240px;
+}
