@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Session\Session;
+
 use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
@@ -24,7 +27,7 @@ class AuthController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function log(Request $request)
+    public function login(LoginRequest $request)
     {
         $data = $request->all([
             "login",
@@ -34,6 +37,9 @@ class AuthController extends Controller
         $password = $data['password'];
         if (auth('web')->attempt($data)) {
             return redirect()->route('profile', Auth::user()->id);
+        }
+        if (auth('admin')->attempt($data)) {
+            return redirect()->route('admin');
         }
         return redirect()->back()->withErrors([
             "login" => "Данные введены неверно"
@@ -46,8 +52,8 @@ class AuthController extends Controller
              "email",
               "surname",
                "patronymic",
-                "password", 
-                "password_confirm",
+                "password",
+                "password_confirmation",
                  "login"
         ]);
         $user = User::create([

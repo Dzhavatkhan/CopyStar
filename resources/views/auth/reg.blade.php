@@ -39,7 +39,10 @@
                 @error('password')
                     <p class="error">{{$message}}</p>
                 @enderror
-                <input type="text" class="password" name="password_confirm" placeholder="Подтвердите пароль">
+                <input type="text" class="password" name="password_confirmation" placeholder="Подтвердите пароль">
+                @error('password_confirmation')
+                    <p class="error">{{$message}}</p>
+                @enderror
                 <button>Отправить</button>
                 <p class="rules">Нажимая на эту кнопку Вы соглашаетесь с правилами сайта</p>
             </form>

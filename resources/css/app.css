@@ -7,6 +7,14 @@ html{
     scroll-behavior: smooth;
     background-color: #FBFBFB;
 }
+@font-face {
+    font-family: 'Ek-Mukta';
+    src: url('../../public/fonts/EkMuktaRegular-mOLv.ttf') format(ttf);
+}
+@font-face {
+    font-family: 'Itim';
+    src: url('../../public/fonts/Itim-Regular.ttf') format(ttf);
+}
 header, main{
     padding-left: 100px;
     padding-right: 100px;
@@ -88,7 +96,7 @@ nav{
     font-weight: 400;
     line-height: normal;
 }
-.wrapper{    
+.wrapper{
     display: flex;
     max-width: 1415px;
     position: relative;
@@ -220,6 +228,15 @@ nav{
   flex-direction: column;
   gap: 67px;
 }
+.about-block h3{
+    color: #000;
+    text-align: center;
+    font-family: "Ek Mukta";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 .about-block p{
   max-width: 100%;
   text-align: center;
@@ -235,7 +252,7 @@ nav{
   footer{
     margin-top: 10px;
     background: #169EF2;
-    width: 1903px;
+    width: 99vw;
     height: 315px;
   }
   .footer-icons{

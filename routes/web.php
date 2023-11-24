@@ -21,6 +21,7 @@ Route::get('/', function () {
 Route::get('sign in', [AuthController::class, 'index'])->name("signIn");
 Route::get('sign up', [AuthController::class, 'signUp'])->name('signUp');
 Route::post('reg', [AuthController::class, "reg"])->name('reg');
+Route::post('login', [AuthController::class, 'login'])->name('login');
 
-Route::get('profile', [UserController::class, 'index'])->name('profile');
+Route::get('profile/id{id}', [UserController::class, 'index'])->name('profile');
 Route::get('profile/logout', [AuthController::class, 'logout'])->name('logout');

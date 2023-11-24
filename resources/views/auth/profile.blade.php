@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="nav">
-        <button class="tablink" onclick="openPage('Home', this, '#5E9FF2')">Ваша корзина</button>
-        <button class="tablink" onclick="openPage('News', this, '#5E9FF2')" id="defaultOpen">Ваши заказы</button>
+        <button class="tablink" onclick="openPage('Home', this, '#5E9FF2')" id="defaultOpen">Ваша корзина</button>
+        <button class="tablink" onclick="openPage('News', this, '#5E9FF2')" >Ваши заказы</button>
         <button class="tablink"  id="defaultOpen"><a href="{{ route('logout') }}">Выйти</a></button>
     </div>
 

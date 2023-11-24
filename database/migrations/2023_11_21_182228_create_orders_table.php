@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users');
             $table->foreignId('cart_id');
+            $table->string('status')->nullable();
             $table->bigInteger('quantity');
             $table->timestamps();
         });
